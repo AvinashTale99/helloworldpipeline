@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main',
                 git 'https://github.com/AvinashTale99/helloworldpipeline.git'
             }
         }
