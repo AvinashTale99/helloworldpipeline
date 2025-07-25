@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-              //  git 'https://github.com/AvinashTale99/helloworldpipeline.git'
-                  checkout scmGit(branches: [[name: 'main']], 
-                                userRemoteConfigs: [[url: 'https://github.com/AvinashTale99/helloworldpipeline.git']]
+                git 'https://github.com/AvinashTale99/helloworldpipeline.git'
             }
         }
 
